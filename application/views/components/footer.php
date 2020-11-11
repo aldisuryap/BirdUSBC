@@ -43,7 +43,7 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			© 2019 Team Birdie
+			© 2020 Team Birdie
 		</div>
 	</div>
 </footer>

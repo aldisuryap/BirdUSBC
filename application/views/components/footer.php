@@ -4,8 +4,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col l10 s12">
-				<h5 class="white-text" style="display: inline-block;">Team Birdie</h5>
-				<img class="ml-5" src="<?= base_url('assets/image/Birdie_Line.png'); ?>" width="30" style="display: inline-block;">
+				<!-- <h5 class="white-text" style="display: inline-block;">Team Birdie</h5> -->
+				<!-- <img class="ml-5" src="<?= base_url('assets/image/Birdie_Line.png'); ?>" width="30" style="display: inline-block;"> -->
 				<div class="row">
 					<!-- <div class="col s1">
 						<img style="border: 2px solid white" src="<?= base_url('assets/image/sad.jpeg'); ?>" class="circle" width="65" height="67">
@@ -43,7 +43,7 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			© 2020 Team Birdie
+			© 2020
 		</div>
 	</div>
 </footer>

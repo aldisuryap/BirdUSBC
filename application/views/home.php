@@ -122,15 +122,15 @@
             </div>
             <div class="col l4">
                 <h4 class="white-text mt-75" style="font-weight: bold;">Recent Gallery:</h4>
-                <?php
-                $dir_thumbs = './assets/upload/thumb/';
-                $dir_images = './assets/upload/gallery/';
-                $images = directory_map($dir_thumbs);
-                foreach ($gallery_burung as $gallery) : ?>
+                <!-- <?php
+                        $dir_thumbs = './assets/upload/thumb/';
+                        $dir_images = './assets/upload/gallery/';
+                        $images = directory_map($dir_thumbs);
+                        foreach ($gallery_burung as $gallery) : ?>
                     <a class="gallery" href="<?= base_url($dir_images) . $gallery->foto_gallery; ?>">
                         <img class="mt-10 mr-10 image" src="<?= base_url($dir_thumbs) . $gallery->foto_gallery; ?>" width="100" height="100" style="border: 2px solid white">
                     </a>
-                <?php endforeach ?>
+                <?php endforeach ?> -->
             </div>
         </div>
     </div>
@@ -190,9 +190,9 @@
     </div>
     <?php $this->load->view('components/footer'); ?>
 
-    <?php if ($this->session->userdata('logged_in') === true) {
-        $this->load->view('components/chat_wa');
-    } ?>
+    <!-- <?php if ($this->session->userdata('logged_in') === true) {
+                $this->load->view('components/chat_wa');
+            } ?> -->
     <script type='text/javascript'>
         $(document).ready(function() {
             $('a.gallery').simpleLightbox();

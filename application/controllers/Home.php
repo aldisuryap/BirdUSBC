@@ -12,4 +12,9 @@ class Home extends CI_Controller
 		$data['gallery_burung'] = $this->Gallery_model->getRandByLimit();
 		$this->load->view('home', $data);
 	}
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect(base_url());
+	}
 }

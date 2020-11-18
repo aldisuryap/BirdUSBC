@@ -1,6 +1,6 @@
 <nav>
     <div class="nav-wrapper container">
-        <a class="brand-logo"><img class="mt-10" src="<?= base_url('assets/image/Birdie_Vertical.png'); ?>" height="40" width="130"></a>
+        <!-- <a class="brand-logo"><img class="mt-10" src="<?= base_url('assets/image/Birdie_Vertical.png'); ?>" height="40" width="130"></a> -->
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="<?= site_url('home/') ?>">Home</a></li>
             <li><a href="<?= site_url('viewlist/') ?>">List</a></li>

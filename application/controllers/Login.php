@@ -9,7 +9,7 @@ class Login extends CI_Controller
             redirect('home/');
         }
         $this->load->library('form_validation');
-        // $this->load->model('User_model');
+        $this->load->model('User_model');
     }
 
     public function index()

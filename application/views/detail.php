@@ -33,6 +33,16 @@
 												<span class="card-title top-6" id="birds"><?= $burung->nama_burung ?></span>
 											</div>
 											<div class="card-content detail">
+												<?php
+												$totalStok = 0;
+												$count = 0;
+												foreach ($detail_burung as $detail) {
+													if ($detail->fk_burung == $burung->id_burung) {
+														$totalStok += $detail->stok_burung;
+														$count += 1;
+													}
+												}
+												$totalBar = ($totalStok / $count) * 10;  ?>
 												<div class="row mb-0">
 													<div class="col s2">
 														<h6 class="blurie">Stok: <?= $detail->stok_burung ?> <i class="fas fa-feather"></i></h6>
@@ -46,7 +56,7 @@
 												</div>
 												<div class="progress detail">
 													<?php $bar = (50 / $detail->stok_burung) * 100; ?>
-													<div class="determinate" style="width: <?= $bar ?>%"></div>
+													<div class="determinate" style="width: <?= $totalBar ?>%"></div>
 												</div>
 												<div class="section">
 													<div class="row mb-0">
@@ -116,10 +126,10 @@
 												</div>
 
 												<?php
-																$dir_thumbs = './assets/upload/thumb/';
-																$dir_images = './assets/upload/gallery/';
-																$images = directory_map($dir_thumbs);
-																foreach ($gallery_burung as $gallery) : ?>
+												$dir_thumbs = './assets/upload/thumb/';
+												$dir_images = './assets/upload/gallery/';
+												$images = directory_map($dir_thumbs);
+												foreach ($gallery_burung as $gallery) : ?>
 													<?php if ($detail->id_detail_burung == $gallery->fk_detail_burung) { ?>
 														<a class="gallery" href="<?= base_url($dir_images) . $gallery->foto_gallery; ?>">
 															<img class="mt-20 mr-10 image" id="border-img" src="<?= base_url($dir_thumbs) . $gallery->foto_gallery; ?>" width="100" height="100">

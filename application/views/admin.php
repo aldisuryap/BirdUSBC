@@ -190,7 +190,7 @@
                                                                                 <td>
                                                                                     <button class="btn-small btn-add waves-effect waves-light" type="submit" name="action">Go</button>
                                                                                     <a class="btn-small waves-orange btn-Update modal-trigger" href="#modal<?= $detail['id_detail_burung'] ?>"><i class="fas fa-edit"></i></a>
-                                                                                    <button class="btn-small btn-delete waves-effect waves-light" type="submit" name="action">Go</button>
+                                                                                    <button class="btn-small btn-delete waves-effect waves-light" type="submit" name="action">Delete</button>
                                                                                 </td>
                                                                             </tr>
                                                                         </form>

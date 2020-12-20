@@ -189,6 +189,10 @@
 		</div>
 	</div>
 	<?php $this->load->view('components/footer'); ?>
+	<?php $this->load->view('components/tawk'); ?>
+	<?php if ($this->session->userdata('logged_in') === true) {
+		$this->load->view('components/chat_wa');
+	} ?>
 	<script type='text/javascript'>
 		$(document).ready(function() {
 			$('a.gallery').simpleLightbox();
